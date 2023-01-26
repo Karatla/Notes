@@ -67,3 +67,5 @@ docker exec -It d9d6240dffe mysql -uroot -pMSj3164926 -e 'show database'
 /proc/sys/net/ipv4/icmp_echo_ignore_all
 
 sudo lsof -i -P -n | grep LISTEN
+
+sudo ufw status
