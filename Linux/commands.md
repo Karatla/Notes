@@ -69,3 +69,7 @@ docker exec -It d9d6240dffe mysql -uroot -pMSj3164926 -e 'show database'
 sudo lsof -i -P -n | grep LISTEN
 
 sudo ufw status
+
+#放行端口
+iptables -I INPUT -p tcp --dport 80 -j ACCEPT
+iptables -I INPUT -p tcp --dport 8080 -j ACCEPT
