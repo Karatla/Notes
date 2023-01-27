@@ -77,3 +77,7 @@ iptables -I INPUT -p tcp --dport 8080 -j ACCEPT
 sudo lsof -i:22 ## see a specific port such as 22 ##
 
 systemctl enable v2ray; systemctl start v2ray
+
+dpkg -l | less
+dpkg -l {package_name}
+dpkg -l vlc
