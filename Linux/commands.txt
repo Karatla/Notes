@@ -83,3 +83,11 @@ dpkg -l {package_name}
 dpkg -l vlc
 
 service v2ray stop
+
+> timedatectl list-timezones | grep Shanghai
+Asia/Shanghai
+
+> sudo timedatectl set-timezone Asia/Shanghai
+
+> date -R
+Sat, 26 Jun 2021 18:03:36 +0800
