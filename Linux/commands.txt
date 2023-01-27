@@ -81,3 +81,5 @@ systemctl enable v2ray; systemctl start v2ray
 dpkg -l | less
 dpkg -l {package_name}
 dpkg -l vlc
+
+service v2ray stop
