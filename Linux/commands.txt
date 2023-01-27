@@ -91,3 +91,8 @@ Asia/Shanghai
 
 > date -R
 Sat, 26 Jun 2021 18:03:36 +0800
+
+ps -ef | grep admin-
+    # kill [进程号]
+    # ps -ef | grep v2ray-proxy-
+    # kill [进程号]
