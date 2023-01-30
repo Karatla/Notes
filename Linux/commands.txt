@@ -96,3 +96,6 @@ ps -ef | grep admin-
     # kill [进程号]
     # ps -ef | grep v2ray-proxy-
     # kill [进程号]
+
+chmod -R 755 ${PWD}
+chown -R www-data:www-data ${PWD}
