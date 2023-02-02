@@ -101,3 +101,13 @@ chmod -R 755 ${PWD}
 chown -R www-data:www-data ${PWD}
 
 lsmod | grep bbr 
+
+
+
+
+进入normal/正常模式（刚进入vim 的默认模式），如果你在insert 模式，按下若干次Esc 可以进入normal 模式。
+把光标移动到开始复制的位置。
+按下 v 来选择字符。（ ...
+光标移动 到结束复制的位置。
+按下 y 来复制。
+光标移动到想要粘贴的位置，按下 p 粘贴。
