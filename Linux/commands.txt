@@ -115,3 +115,5 @@ lsmod | grep bbr
 
 #日志权限
 sudo vim /etc/rsyslog.conf
+#重启日志服务
+/etc/init.d/rsyslog restart
