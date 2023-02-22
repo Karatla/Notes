@@ -133,3 +133,6 @@ zip -r <output_file> <folder_1> <folder_2> ... <folder_n>
 chmod -R 755 ${PWD}
 chown -R www:www ${PWD}
 
+
+sudo passwd root
+su -
