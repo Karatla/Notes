@@ -136,3 +136,6 @@ chown -R www:www ${PWD}
 
 sudo passwd root
 su -
+
+
+service php-fpm stop
