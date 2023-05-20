@@ -139,3 +139,5 @@ su -
 
 
 service php-fpm stop
+
+service nginx restart
