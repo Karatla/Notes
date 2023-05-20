@@ -1,0 +1,87 @@
+安装xray 的bbr
+wget -N https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh && bash install.sh
+
+#取消xrayr开机自起
+xray
+10
+
+#安装bbr
+xray
+11
+2
+
+xray
+11
+10
+重启
+
+xray
+11
+7
+
+Debian
+
+Docker:
+#Update the apt package index and install packages to allow apt to use a repository over HTTPS:
+
+sudo apt-get update
+
+sudo apt-get install \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+
+#Add Docker’s official GPG key:
+
+sudo mkdir -p /etc/apt/keyrings
+
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+#Use the following command to set up the repository:
+
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+1.Install Docker Engine
+#To install the latest version, run:
+
+sudo apt-get update
+
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+
+#Verify that the Docker Engine installation is successful by running the hello-world image:
+
+sudo docker run hello-world
+
+systemctl start docker
+systemctl enable docker
+
+2.Docker-compose
+curl -fsSL https://get.docker.com | bash -s docker
+
+curl -L "https://github.com/docker/compose/releases/download/1.26.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+chmod +x /usr/local/bin/docker-compose
+
+systemctl status docker.service
+
+3.配置修改
+git clone https://github.com/XrayR-project/XrayR-release
+
+cd XrayR-release
+
+vim	config/config.yml
+
+#编辑配置文件：config.yml
+
+#放行端口
+iptables -I INPUT -p tcp --dport 80 -j ACCEPT
+
+
+docker-compose up -d
+
+
+docker-compose pull
+docker-compose up -d
