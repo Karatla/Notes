@@ -141,3 +141,13 @@ su -
 service php-fpm stop
 
 service nginx restart
+
+
+Open a terminal and copy the files:
+
+i. From Linux to Mac (run from the Linux machine):
+
+scp filename.txt user@remote_server:/Users/YOURNAME/
+ii. From Linux to Mac (run from the Mac):
+
+scp user@remote_server:/Users/YOURNAME/filename.txt .
