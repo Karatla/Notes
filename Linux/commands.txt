@@ -151,3 +151,5 @@ scp filename.txt user@remote_server:/Users/YOURNAME/
 ii. From Linux to Mac (run from the Mac):
 
 scp user@remote_server:/Users/YOURNAME/filename.txt .
+
+4
