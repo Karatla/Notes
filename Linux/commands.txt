@@ -155,6 +155,10 @@ scp user@remote_server:/Users/YOURNAME/filename.txt .
 4
 88
 456
+<<<<<<< Updated upstream
 asdas
 databasedas
 d9d6240dffeasd
+=======
+llllll
+>>>>>>> Stashed changes
