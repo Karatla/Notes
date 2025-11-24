@@ -1,5 +1,15 @@
 Below is the **correct, realistic, modern, senior-level architecture** for **Native Android** and **Native iOS**, built to match your Flutter architecture *one-to-one*.
 
+✔ MVVM =
+
+Model = data + domain
+
+View = pages/widgets
+
+ViewModel = blocs/viewmodels
+
+Flutter uses BLoC instead of ViewModel, but the pattern is the same.
+
 This means:
 ✔ same structure
 ✔ same concepts (data / domain / presentation)
