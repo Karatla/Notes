@@ -7,7 +7,7 @@ This means:
 ✔ same feature modules
 ✔ realistic to build real apps like your Cartracker, Thinkware, Fleetify, Health apps, BLE devices, Dashcam, etc.
 
-This is the **closest native equivalent** of your Flutter BLoC + Clean Architecture.
+This is the **closest native equivalent** of  Flutter BLoC + Clean Architecture.
 
 ---
 
