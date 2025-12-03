@@ -11,6 +11,12 @@ lib/
 ├── core/
 │   ├── constants/                    // global constants, colors, sizes
 │   ├── error/                        // failures, exceptions
+│   │   ├── app_errors.dart               // AppError, Failure, custom exceptions
+│   │   ├── error_mapper.dart             // map exceptions → AppError
+│   │   ├── global_error_handler.dart     // handleGlobalError() used by main.dart
+│   │   ├── flutter_error_handler.dart    // wrapper for FlutterError.onError
+│   │   ├── platform_error_handler.dart   // wrapper for PlatformDispatcher.onError
+│   │   ├── async_zone_error_handler.dart // wrapper for runZonedGuarded
 │   ├── utils/                        // helpers, formatters, extensions
 │   ├── widgets/                      // shared reusable widgets
 │   └── services/                     // global services (GPS, NFC, BLE, Camera…)
