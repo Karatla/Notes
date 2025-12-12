@@ -1,3 +1,32 @@
+Main system
+App Layer
+ ├── App lifecycle
+ ├── Routing / Navigation
+ ├── Dependency Injection
+ └── Global Error Handling
+
+Core Layer
+ ├── Constants / Config
+ ├── Error Model
+ ├── System Services
+ └── Utilities
+
+Feature Layer
+ ├── Data
+ │   ├── DTO
+ │   ├── DataSource (Remote / Local)
+ │   └── Repository Impl
+ │
+ ├── Domain
+ │   ├── Entity
+ │   ├── Repository Contract
+ │   └── UseCase
+ │
+ └── Presentation
+     ├── State Holder (BLoC / VM)
+     └── UI (Widget / View)
+
+
 Below is the **correct, realistic, modern, senior-level architecture** for **Native Android** and **Native iOS**, built to match your Flutter architecture *one-to-one*.
 
 ✔ MVVM =
