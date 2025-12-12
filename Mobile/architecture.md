@@ -1,4 +1,5 @@
 Main system
+---
 ...
 App Layer
  ├── App lifecycle
@@ -26,8 +27,8 @@ Feature Layer
  └── Presentation
      ├── State Holder (BLoC / VM)
      └── UI (Widget / View)
-
 ...
+---
 
 Below is the **correct, realistic, modern, senior-level architecture** for **Native Android** and **Native iOS**, built to match your Flutter architecture *one-to-one*.
 
