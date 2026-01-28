@@ -1,10 +1,13 @@
-## Essential commands
+## Core Opencode commands
 
 - Start Opencode:
   opencode
 
-- Model selection:
-  /mo
+- Session selection:
+  /sessions
 
-- Mode switch:
-  Tab
+- Agent (mode) selection:
+  /agents
+
+- Model selection:
+  /models
